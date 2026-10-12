@@ -1,0 +1,106 @@
+{
+  "id": "p2",
+  "name": "第二页",
+  "background": {
+    "type": "color",
+    "value": "#1A1028"
+  },
+  "idle": {
+    "seconds": 8,
+    "pageId": "home"
+  },
+  "defaultTransition": {
+    "type": "fade",
+    "dur": 0.3
+  },
+  "components": [
+    {
+      "id": "t2",
+      "name": "副标题",
+      "type": "text",
+      "x": 80,
+      "y": 40,
+      "w": 800,
+      "h": 64,
+      "rotation": 0,
+      "z": 2,
+      "visible": true,
+      "onClick": null,
+      "props": {
+        "text": "第二页",
+        "fontFamily": "Microsoft YaHei",
+        "fontSize": 48,
+        "color": "#FFFFFF",
+        "fontWeight": 400,
+        "italic": false,
+        "align": "left",
+        "valign": "middle",
+        "lineHeight": 1.4,
+        "letterSpacing": 0
+      }
+    },
+    {
+      "id": "v1",
+      "name": "演示视频",
+      "type": "video",
+      "x": 80,
+      "y": 120,
+      "w": 960,
+      "h": 540,
+      "rotation": 0,
+      "z": 1,
+      "visible": true,
+      "onClick": null,
+      "onEnded": null,
+      "props": {
+        "src": [
+          "assets/clip.mp4"
+        ],
+        "loopMode": "single",
+        "intervalSeconds": 0,
+        "muted": false,
+        "autoplay": true
+      }
+    },
+    {
+      "id": "btn2",
+      "name": "回首页",
+      "type": "button",
+      "x": 80,
+      "y": 690,
+      "w": 280,
+      "h": 80,
+      "rotation": 0,
+      "z": 3,
+      "visible": true,
+      "onClick": {
+        "action": "gotoHome",
+        "transition": {
+          "type": "slideLeft",
+          "dur": 0.3
+        }
+      },
+      "props": {
+        "srcUp": "assets/btn.png",
+        "srcDown": "assets/btn-down.png"
+      }
+    },
+    {
+      "id": "missing",
+      "name": "缺图",
+      "type": "image",
+      "x": 1100,
+      "y": 120,
+      "w": 240,
+      "h": 135,
+      "rotation": 0,
+      "z": 1,
+      "visible": true,
+      "onClick": null,
+      "props": {
+        "src": "assets/does-not-exist.png",
+        "fit": "cover"
+      }
+    }
+  ]
+}

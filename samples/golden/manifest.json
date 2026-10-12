@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "publishVersion": 1,
+  "id": "demo-001",
+  "name": "样例查询",
+  "design": {
+    "width": 1920,
+    "height": 1080
+  },
+  "pages": [
+    "home",
+    "p2"
+  ],
+  "entryPageId": "home",
+  "player": {
+    "autoStart": false,
+    "cursorVisible": false,
+    "exitPassword": ""
+  },
+  "license": {
+    "expireDate": "2027-12-31",
+    "trialDays": 365
+  }
+}

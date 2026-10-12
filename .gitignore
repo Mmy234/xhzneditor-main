@@ -1,0 +1,17 @@
+# Build
+**/bin/
+**/obj/
+**/publish/
+*.user
+*.suo
+*.userosscache
+.vs/
+.idea/
+
+# Installer output
+installer/output/
+
+# Logs / local player data
+*.log
+.DS_Store
+Thumbs.db

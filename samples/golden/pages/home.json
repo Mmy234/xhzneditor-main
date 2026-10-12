@@ -1,0 +1,84 @@
+{
+  "id": "home",
+  "name": "首页",
+  "background": {
+    "type": "color",
+    "value": "#102040"
+  },
+  "idle": {
+    "seconds": 0,
+    "pageId": "home"
+  },
+  "defaultTransition": {
+    "type": "fade",
+    "dur": 0.3
+  },
+  "components": [
+    {
+      "id": "t1",
+      "name": "标题",
+      "type": "text",
+      "x": 200,
+      "y": 48,
+      "w": 1520,
+      "h": 80,
+      "rotation": 0,
+      "z": 2,
+      "visible": true,
+      "onClick": null,
+      "props": {
+        "text": "欢迎查询",
+        "fontFamily": "Microsoft YaHei",
+        "fontSize": 64,
+        "color": "#FFFFFF",
+        "fontWeight": 700,
+        "italic": false,
+        "align": "left",
+        "valign": "middle",
+        "lineHeight": 1.4,
+        "letterSpacing": 2
+      }
+    },
+    {
+      "id": "img1",
+      "name": "主图",
+      "type": "image",
+      "x": 200,
+      "y": 160,
+      "w": 800,
+      "h": 400,
+      "rotation": 0,
+      "z": 1,
+      "visible": true,
+      "onClick": null,
+      "props": {
+        "src": "assets/hero.png",
+        "fit": "cover"
+      }
+    },
+    {
+      "id": "btn1",
+      "name": "下一页",
+      "type": "button",
+      "x": 200,
+      "y": 600,
+      "w": 280,
+      "h": 80,
+      "rotation": 0,
+      "z": 3,
+      "visible": true,
+      "onClick": {
+        "action": "gotoPage",
+        "pageId": "p2",
+        "transition": {
+          "type": "fade",
+          "dur": 0.3
+        }
+      },
+      "props": {
+        "srcUp": "assets/btn.png",
+        "srcDown": "assets/btn-down.png"
+      }
+    }
+  ]
+}
